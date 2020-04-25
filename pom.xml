@@ -11,10 +11,26 @@
     <name>junit-to-snowflake</name>
     <url>https://github.com/kaygee/junit-to-snowflake/</url>
 
+    <developers>
+        <developer>
+            <name>Kevin Gann</name>
+            <email>kaygee@rev.com</email>
+            <organizationUrl>https://www.linkedin.com/in/kevingann/</organizationUrl>
+        </developer>
+    </developers>
+
+    <issueManagement>
+        <url>https://bugs.rev.com/</url>
+        <system>Jira</system>
+    </issueManagement>
+    <scm>
+        <url>https://github.com/kaygee/junit-to-snowflake.git</url>
+    </scm>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>1.7</maven.compiler.source>
-        <maven.compiler.target>1.7</maven.compiler.target>
+        <maven.compiler.source>1.9</maven.compiler.source>
+        <maven.compiler.target>1.9</maven.compiler.target>
     </properties>
 
     <dependencies>
@@ -48,6 +64,18 @@
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
             <version>1.7.25</version>
+        </dependency>
+        <dependency>
+            <groupId>org.bouncycastle</groupId>
+            <artifactId>bcprov-ext-jdk15on</artifactId>
+            <version>1.60</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.bouncycastle</groupId>
+            <artifactId>bcprov-ext-jdk15on</artifactId>
+            <version>1.60</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 
